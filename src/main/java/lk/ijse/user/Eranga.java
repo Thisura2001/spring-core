@@ -23,7 +23,7 @@ public class Eranga {
         this.goodGirl = goodGirl;
     }
 
-    @PostConstruct
+    @PostConstruct //used to mark a method that should be executed after the dependency injection is done to perform any initialization
     public void init(){
         System.out.println(goodGirl);
         goodGirl.love();
