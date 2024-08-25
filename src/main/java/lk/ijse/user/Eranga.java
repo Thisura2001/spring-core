@@ -1,6 +1,7 @@
 package lk.ijse.user;
 
 import jakarta.annotation.PostConstruct;
+import lk.ijse.CustomAnnotation.Nail;
 import lk.ijse.contract.GoodGirl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -17,6 +18,7 @@ public class Eranga {
 //    }
 @Autowired // use to dependency injection
 @Qualifier("Long Hair")
+@Nail
     public void setGoodGirl(GoodGirl goodGirl){
         this.goodGirl = goodGirl;
     }
