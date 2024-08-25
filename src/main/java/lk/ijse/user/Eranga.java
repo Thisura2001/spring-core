@@ -10,7 +10,7 @@ public class Eranga {
 
    private GoodGirl goodGirl;
     @Autowired
-    public void setGoodGirl(GoodGirl goodGirl){
+    public Eranga(GoodGirl goodGirl){
         this.goodGirl = goodGirl;
         System.out.println("CONSTRUCTOR "+goodGirl);
     }
