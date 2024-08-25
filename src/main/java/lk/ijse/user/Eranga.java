@@ -7,10 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Eranga {
-    @Autowired
-    GoodGirl goodGirl;
 
-    public Eranga(){
+   private final GoodGirl goodGirl;
+    @Autowired
+    public Eranga(GoodGirl goodGirl){
+        this.goodGirl = goodGirl;
         System.out.println("CONSTRUCTOR "+goodGirl);
     }
     @PostConstruct
